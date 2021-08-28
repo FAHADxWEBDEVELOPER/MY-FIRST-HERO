@@ -40,7 +40,15 @@
                 color: yellow;
                 font-size: 50px;
             }
-        
+            body {
+                counter-reset: section;
+
+            }
+            p::before{
+                counter-increment: section;
+                content: "crush" counter(section) ": " ; 
+            }
+            
 
      </style>
     <button> click me </button>
@@ -59,13 +67,13 @@
 </head>
 <body>
     <ul>
-        <li>alia</li>
-        <li>dalia</li>
-        <li>malia</li>
-        <li>kalia</li>
-        <li>julia</li>
-        <li>fadia</li>
-        <li>khadia</li>
+        <p>alia</p>
+        <p>dalia</p>
+        <p>malia</p>
+        <p>kalia</p>
+        <p>julia</p>
+        <p>fadia</p>
+        <p>khadia</p>
     </ul>
     </ul>
     
